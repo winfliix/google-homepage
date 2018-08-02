@@ -7,6 +7,11 @@ html body{
   margin: 0;
   padding: 0;
 }
+
+a:-webkit-any-link {
+  text-decoration: none;
+  color: #696969;
+}
 /*nav top*/
 .nav-ul {
 display: inline;
@@ -50,7 +55,7 @@ height: auto;
   width: 20px;
   height: auto;
   padding: 5px;
-  border-radius: 100%;
+  border-radius: 90%;
 }
 /*middle page*/
 
@@ -74,49 +79,83 @@ box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
 
 }
 
+.search-bar input:hover {
+  box-shadow: 0px 4px 4px 0px, #686868;
 
-.buttons button {
+}
+
+
+.buttons input {
+  position: relative;
   background-color: #F0F0F0;
-  border: 0px solid;
+  border: none;
+  border-color: #F0F0F0;
   padding: 12px 22px 12px 22px;
-  cursor: default;
+  cursor: pointer;
   font-weight: bold;
   color: #686868;
   margin-right: 5px;
+  margin-top: 20px;
   border-radius: 2px;
-  transition-duration: 0.2s;
 }
 
+.buttons input:hover {
+color: black;
+box-shadow: 0px 0px 0.5px 0.5px #686868;
+}
 
-.footer {
-  position: fixed;
-  bottom: 0;
+footer {
+text-decoration-style: none;
+background-color: #f2f2f2;
+position: fixed;
+right: 0;
+bottom: 0;
+left: 0;
+display: block;
+border-top-style: solid;
+border-top-width: 1px;
+border-top-color: #d8d8d8;
+
+}
+
+footer nav {
   width: 100%;
   background-color: #F0F0F0;
-  text-align: center;
-  border-top-color: #E8E8E8;
+  border-top-style: solid #f2f2f2;
+  padding: 5px 0px 5px 0px;
+  color: #696969;
+  font-size: small;
+  font-family: tahoma, sans-serif;
+}
+
+footer nav:last-child {
+  padding: 20px 0px 20px 0px;
+  margin: 0px 0px 13px 0px;
   border-top-style: solid;
   border-top-width: 1px;
-  padding-bottom: 13px;
-  padding-top: 13px;
+  border-top-color: #d8d8d8;
+  text-decoration-style: none;
 }
 
-.footer-left a{
+footer p{
+  margin-left: 40px;
+  font-size: small;
+}
+
+footer a {
+  padding-right: 20px;
+  font-size: 12.5px;
+}
+
+.footer-left {
   float: left;
-  display: block;
-  padding-left: 30px;
-  text-decoration: none;
-  color: #696969;
-  font-size: small;
-  font-family: tahoma, sans-serif;
+  padding: 0px 30px 0px 40px;
+  margin-right: 20px;
+
 }
 
-.footer-right a{
+.footer-right {
   float: right;
-  display: block;
-  padding-right: 30px;
-  text-decoration: none;
-  color: #696969;
-  font-size: small;
-  font-family: tahoma, sans-serif;
+  padding: 0px 30px 0px 40px;
+  margin-left: 20px;
 }
